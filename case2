@@ -1,0 +1,1 @@
+SELECT p.id,p.name,c.content,c.creatdats FROM post p JOIN COMMENT c ON p.id=c.postid JOIN auther a ON p.autherid=a.id WHERE a.name='James Bond' ORDER BY p.id, c.creardats DESC LIMIT 10;
